@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/purple_200"
+    android:foregroundTint="#7165E3"
+    tools:context=".activities.ChatIndividualActivity">
+
+    <View
+        android:id="@+id/bg_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatl_bg"
+        android:scaleX="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_camera_solid"
+        android:backgroundTint="#7165E3"
+        app:layout_constraintBottom_toBottomOf="@+id/message"
+        app:layout_constraintEnd_toStartOf="@+id/sendBTN"
+        app:layout_constraintTop_toTopOf="@+id/message"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/lock"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ic_lock_open_solid"
+        android:backgroundTint="#7165E3"
+        app:layout_constraintBottom_toBottomOf="@+id/message"
+        app:layout_constraintEnd_toStartOf="@+id/camera"
+        app:layout_constraintTop_toTopOf="@+id/message"
+        app:layout_constraintVertical_bias="0.533"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/ch_header"
+        android:scaleX="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ch_header" />
+
+    <Button
+        android:id="@+id/ng_return2"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/ic_group_expand_14"
+        android:backgroundTint="#00FFFFFF"
+        android:foreground="@drawable/ic_group_expand_14"
+        android:foregroundTint="#7165E3"
+        android:rotation="-90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mensajes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#DC6C6C"
+        app:layout_constraintBottom_toTopOf="@+id/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCorreo" />
+
+    <TextView
+        android:id="@+id/idCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7165E3"
+        android:foregroundTint="#7165E3"
+        android:text="@string/Correo"
+        android:textColor="#7165E3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:drawableTint="#7165E3"
+        app:layout_constraintBottom_toBottomOf="@+id/ng_return2"
+        app:layout_constraintStart_toEndOf="@+id/ms_on_offline2"
+        app:layout_constraintTop_toTopOf="@+id/ng_return2" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/enter_message"
+        android:textColor="@color/teal_200"
+        android:textColorHint="#AC99F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lock"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/sendBTN"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/sender"
+        android:backgroundTint="#7165E3"
+        android:contentDescription="@string/back"
+        android:foregroundTint="#7165E3"
+        app:layout_constraintBottom_toBottomOf="@+id/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/message"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/ms_on_offline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/ms_circ"
+        app:layout_constraintBottom_toBottomOf="@+id/ng_return2"
+        app:layout_constraintStart_toEndOf="@+id/ng_return2"
+        app:layout_constraintTop_toTopOf="@+id/ng_return2"
+        app:tint="@color/green" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

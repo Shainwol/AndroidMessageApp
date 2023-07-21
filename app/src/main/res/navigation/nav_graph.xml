@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mychat.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"
+        />
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.mychat.fragment.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard"
+        />
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.example.mychat.fragment.NotificationsFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications"
+        />
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.example.mychat.fragment.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/groupListFragment"
+        android:name="com.example.mychat.fragment.GroupListFragment"
+        android:label="fragment_group_list"
+        tools:layout="@layout/fragment_group_list" />
+
+
+</navigation>

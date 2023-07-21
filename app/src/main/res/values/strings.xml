@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyChat</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in_short">ola</string>
+    <string name="title_home">home</string>
+    <string name="title_chat">chat</string>
+    <string name="title_notifications">tareas</string>
+    <string name="title_dashboard">muro</string>
+    <string name="BotonRegister">Boton de registro</string>
+    <string name="BotonLogin">Boton de login</string>
+    <string name="decoracion">"decoracion "</string>
+    <string name="ImagenPerfil">Imagen de perfil</string>
+    <string name="Estrellas">Estrellas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chats">chats</string>
+    <string name="crearchat">Crear chat</string>
+    <string name="mensajes">Mensajes</string>
+    <string name="Correo">Correo</string>
+    <string name="Bienvenido">Bienvenido</string>
+    <string name="Usuarios">Usuarios</string>
+    <string name="title_group">subgrupos</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
+    <string name="bg_si">TODO</string>
+    <string name="enter_message">Enter message...</string>
+    <string name="back">Back</string>
+    <string name="Subgrupos">Subgrupos</string>
+</resources>

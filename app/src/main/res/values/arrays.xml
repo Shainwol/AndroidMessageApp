@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="carreras" >
+        <item>LMAD</item>
+        <item>LCC</item>
+        <item>LA</item>
+        <item>LF</item>
+        <item>LSTI</item>
+        <item>LM</item>
+    </string-array>
+</resources>
